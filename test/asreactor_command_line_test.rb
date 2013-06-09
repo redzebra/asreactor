@@ -16,12 +16,14 @@ require File.expand_path '../test_helper.rb', __FILE__
 require 'asreactor/command_line'
 
 describe 'ASReactor::CommandLine' do
-  before do
-    ASReactor.config_file = TEST_CONFIG_FILE
-    @command_line = ASReactor::CommandLine.new('asreactor_test')
-  end
+  #before do
+  #  ASReactor.config_file = TEST_CONFIG_FILE
+  #  @command_line = ASReactor::CommandLine.new('asreactor_test')
+  #end
 
-  it 'should initialize' do
-    assert_instance_of ASReactor::CommandLine, @command_line
-  end
+  #it 'should initialize' do
+  #  assert_instance_of ASReactor::CommandLine, @command_line
+  #end
+
+  it 'should be pending'
 end
