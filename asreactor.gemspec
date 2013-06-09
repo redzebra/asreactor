@@ -16,9 +16,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'asreactor/version'
 
-Gem::Specification.new do |s|
-  s.name = 'asreactor'
-  s.version = ASReactor::VERSION
+Gem::Specification.new 'asreactor', ASReactor::VERSION do |s|
   s.summary = %q{React to EC2 Auto Scaling activities.}
   s.description = s.summary
   s.license = 'Apache 2.0'
@@ -30,7 +28,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'uuidtools'
   s.require_paths = ['lib']
 
-  s.files = `git ls-files`.split($/)
+  s.files = `git ls-files`.split($/) - %w[.gitignore .travis.yml]
   s.executables = s.files.grep(%r{^bin/}) {|f| File.basename(f)}
-  s.test_files = s.files.grep(%r{^(test|spec|features)/})
+  s.test_files = s.files.grep(%r{^test\/.*_test.(rb|yml)})
 end
