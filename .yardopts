@@ -1,0 +1,5 @@
+--title Auto Scaling Reactor
+--markup markdown
+lib/**/*.rb
+-
+LICENSE.txt README.md

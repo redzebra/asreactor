@@ -1,0 +1,9 @@
+*.gem
+/.bundle/
+/.ruby-version
+/.yardoc/
+/Gemfile.lock
+/asreactor.yml
+/coverage/
+/doc/
+/pkg/
