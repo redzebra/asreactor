@@ -17,6 +17,7 @@ require 'asreactor/command_line'
 
 describe 'ASReactor::CommandLine' do
   before do
+    ASReactor.config_file = TEST_CONFIG_FILE
     @command_line = ASReactor::CommandLine.new('asreactor_test')
   end
 
