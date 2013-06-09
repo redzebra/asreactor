@@ -13,7 +13,14 @@
 # limitations under the License.
 
 require File.expand_path '../test_helper.rb', __FILE__
+require 'asreactor/command_line'
 
 describe 'ASReactor::CommandLine' do
-  it 'should be pending'
+  before do
+    @command_line = ASReactor::CommandLine.new('asreactor_test')
+  end
+
+  it 'should initialize' do
+    assert_instance_of ASReactor::CommandLine, @command_line
+  end
 end

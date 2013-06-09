@@ -15,5 +15,18 @@
 require File.expand_path '../test_helper.rb', __FILE__
 
 describe 'ASReactor::Config' do
-  it 'should be pending'
+  before do
+    @config = ASReactor::Config.load(TEST_CONFIG_FILE)
+  end
+
+  it 'should load a configuration file' do
+    assert_instance_of ASReactor::Config, @config
+  end
+
+  it 'should return config items' do
+    # This makes assumptions about the contents of TEST_CONFIG_FILE.
+    assert_instance_of String, @config['region']
+    assert_instance_of String, @config['topic_arn']
+    assert_instance_of Array, @config['groups']
+  end
 end

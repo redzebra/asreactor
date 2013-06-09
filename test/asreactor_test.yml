@@ -1,0 +1,10 @@
+# asreactor.yml
+#
+---
+region: 'eu-west-1'
+
+topic_arn: arn:aws:sns:eu-west-1:000000000000:asreactor-topic
+
+groups:
+- name: 'asreactor-group-*'
+  exec: '/usr/bin/printenv'

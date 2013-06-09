@@ -22,3 +22,5 @@ require 'asreactor'
 
 AWS.eager_autoload!
 AWS.stub!
+
+TEST_CONFIG_FILE = File.expand_path('../asreactor_test.yml', __FILE__)
