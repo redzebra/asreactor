@@ -1,5 +1,4 @@
+--readme README.md
 --title Auto Scaling Reactor
 --markup markdown
-lib/**/*.rb
--
-LICENSE.txt README.md
+'lib/**/*.rb' - LICENSE.txt README.md
