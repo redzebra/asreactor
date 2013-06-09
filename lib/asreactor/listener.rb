@@ -52,7 +52,7 @@ module ASReactor
           ]
           next
         end
-        ASReactor.log_debug 'activity= '+activity.inspect
+        ASReactor.log.debug 'activity= '+activity.inspect
         react_to(activity)
       end
     end
@@ -87,7 +87,7 @@ module ASReactor
       env ||= {'ASREACT_REGION' => @region}.merge(Hash[
         activity.to_a.map {|k, v| ["ASREACT_#{k.gsub(/([0-9a-z])([A-Z])/,'\1_\2').upcase}", v.to_s]}
       ])
-     ASRector.log.debug 'env= '+env.inspect
+     ASReactor.log.debug 'env= '+env.inspect
 
       @groups.select do |group|
         if activity['AutoScalingGroupName'] =~ group['name_regexp']
@@ -97,7 +97,7 @@ module ASReactor
             ASReactor.log.debug 'disowning pid '+pid.inspect
             Process.detach(pid)
           rescue Errno::ENOENT => e
-            ASRector.log.error e.message
+            ASReactor.log.error e.message
           end
         end
       end
