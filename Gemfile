@@ -18,6 +18,7 @@ gemspec
 
 group :dev do
   gem 'rake'
+  gem 'travis'
 end
 
 group :documentation do

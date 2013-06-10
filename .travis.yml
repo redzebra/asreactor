@@ -1,8 +1,15 @@
 ---
-branches:
-  only:
-    - master
 rvm:
   - 2.0.0
   - 1.9.3
   - 1.8.7
+
+branches:
+  only:
+    - master
+
+env:
+  - AWS_REGION=eu-west-1
+  - secure: ! 'j5lOdwRDymVEBwfSbCGSZiP7rzhVtqog1nrkrGDTLLntsLwpoGPes8XBxtac
+      ZzGrjt8kQdZt/13CuOjXO01Uv2kiQLWx069pClzIkQ8irkFf3AovDUAHe+UI
+      bCyc5sW2xCzKBS+aIeOaaNXqSXPDa4GlJw2JLETvdumG2c2pt2w='
