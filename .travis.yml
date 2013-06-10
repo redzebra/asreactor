@@ -7,8 +7,8 @@ rvm:
 branches:
   only:
     - master
-env:
-  - AWS_REGION=eu-west-1
-  - secure: ! 'BRksYG5wpkav+uarDfogOpkGugehZXRWDULpWDEEEwnknae9gSl8myf4yRn0
-      Z/PhdyhEiCF5jeR2FX1tM6kj59i/96LnodOs2oNbZSQqBqsPEir9Tfqen0eU
-      5Z2XkHio1QwTxrAME/8seZtau1w1z2NGSVuMFsKedpAjTtGMDPo='
+#env:
+#  - AWS_REGION=eu-west-1
+#  - secure: ! 'BRksYG5wpkav+uarDfogOpkGugehZXRWDULpWDEEEwnknae9gSl8myf4yRn0
+#      Z/PhdyhEiCF5jeR2FX1tM6kj59i/96LnodOs2oNbZSQqBqsPEir9Tfqen0eU
+#      5Z2XkHio1QwTxrAME/8seZtau1w1z2NGSVuMFsKedpAjTtGMDPo='
