@@ -14,5 +14,5 @@
 
 module ASReactor
   # Current version of asreactor
-  VERSION = '0.2.0.pre'
+  VERSION = '0.1.3.pre'
 end

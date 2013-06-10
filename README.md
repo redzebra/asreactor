@@ -26,6 +26,8 @@ _TODO_
 
 _TODO_
 
+Details of the triggering Auto Scaling activity are passed in the environment.
+
 ```shell
 ASREACT_ACCOUNT_ID
 ASREACT_ACTIVITY_ID
@@ -47,6 +49,23 @@ ASREACT_TIME
 
 ASREACT_REGION
 ```
+
+## Credentials and Permissions
+
+Set AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_REGION in the environment before running asreactor. (TODO: support credentials in the configuration file.) Instance profiles are supported as an alternative.
+
+asreactor requires the following IAM permissions:
+
+  - sns:Subscribe
+  - sns:Unsubscribe
+  - sqs:CreateQueue
+  - sqs:DeleteMessage
+  - sqs:DeleteQueue
+  - sqs:GetQueueAttributes
+  - sqs:ReceiveMessage
+  - sqs:SetQueueAttributes
+
+**This list is probably incomplete and is likely to change.**
 
 ## License
 
