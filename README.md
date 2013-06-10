@@ -67,6 +67,14 @@ asreactor requires the following IAM permissions:
 
 **This list is probably incomplete and is likely to change.**
 
+## AWS Costs
+
+**asreactor will incur costs in Amazon Web Services and you use it at your own
+risk.** The costs will normally be negligible but this software may contain
+bugs which result in runaway SQS use.
+
+See [Amazon SQS Pricing][Amazon SQS Pricing] for further details of costs.
+
 ## License
 
 This software is distributed under the
@@ -87,3 +95,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+[Amazon SQS Pricing]: http://aws.amazon.com/sqs/#pricing
