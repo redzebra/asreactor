@@ -16,4 +16,14 @@ require File.expand_path '../test_helper.rb', __FILE__
 
 describe 'ASReactor::Listener' do
   it 'should be pending'
+
+  before do
+  #  @listener = ASReactor::Listener.new
+  end
+
+  describe 'env_for_child' do
+    it 'should return a hash' do
+  #    assert_instance_of Hash, @listener.env_for_child
+    end
+  end
 end

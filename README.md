@@ -5,6 +5,7 @@ React to EC2 Auto Scaling activities.
 [![Build Status](https://travis-ci.org/redzebra/asreactor.png?branch=master)](https://travis-ci.org/redzebra/asreactor)
 [![Coverage Status](https://coveralls.io/repos/redzebra/asreactor/badge.png?branch=master)](https://coveralls.io/r/redzebra/asreactor?branch=master)
 [![Dependency Status](https://gemnasium.com/redzebra/asreactor.png)](https://gemnasium.com/redzebra/asreactor)
+[![Code Climate](https://codeclimate.com/github/redzebra/asreactor.png)](https://codeclimate.com/github/redzebra/asreactor)
 
 ## Installation
 
